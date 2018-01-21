@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Hang Yourself</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Pacifico|Rubik" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+
+	
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	
+</head>
+
+<body onload="loadFunction()">
+  	<main class="container">
+	    <div class="row heading">
+		   <h1>Tenacious D</h1>
+		</div>
+		<div class="row introDiv">
+			<p class="col-md-12">Allright this should be pretty simple. I like Tenacious D, so my theme is their music. But you have to find out which of their songs made it onto my top 10 list. Good luck, you'll need it!  </p>
+		</div>
+		<div class="container">
+			<div class="row">
+				
+				<section class="col-md-8 col-sm-12 leftSection">
+					<h2>To make a guess, type any letter or a space. </h2>
+					
+					<div id="hold"></div>
+			    </section>
+
+			    <aside class="col-md-4 col-sm-12 rightAside">
+					  
+					<h2 id="mylives"></h2>
+				    
+				
+				    <div class="letterGuessed">
+				      <h2>You tried the following letters:</h2>
+				      <p id="userGuess"></p>
+				    </div>
+				    
+				
+				    <div class="container">
+				      <button onclick="resetButton()" type="button" class="btn btn-info" id="reset">Play again</button>
+				    </div>
+			    </aside>
+			</div>
+		</div>
+ 	</main>
+   <script src="hangman.js"></script>
+
+</body>
+</html>
